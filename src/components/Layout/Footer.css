@@ -1,0 +1,20 @@
+.Footer {
+  display: flex;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LogoFooter {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 10px;
+  cursor: pointer;
+}

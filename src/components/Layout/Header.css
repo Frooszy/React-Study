@@ -1,0 +1,29 @@
+.Header {
+  display: flex;
+  background-color: black;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeaderLista {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+.HeaderLista a {
+  color: white;
+  padding-right: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Header .Logo p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 10px;
+  cursor: pointer;
+}

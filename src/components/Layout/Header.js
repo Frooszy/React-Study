@@ -1,7 +1,10 @@
 import './Header.css'
-
+import Menu from '../MenuHeader/Menu'
+import { useState } from 'react'
 
 function Header() {
+
+    const [active, setActive] = useState(false)
 
     return (
         <div className="Header">
@@ -9,10 +12,11 @@ function Header() {
                 <p>Title</p>
             </div>
             <ul className='HeaderLista'>
-                <li><a href='#About'>About</a></li>
-                <li><a href='#Catalog'>Catalog</a></li>
-                <li><a href='#Links'>Links</a></li>
+                <li><p href='#About'>About</p></li>
+                <li><p href='#Catalog'>Catalog</p></li>
+                <li><p onClick={() => setActive(!active)}>Links</p></li>
             </ul>
+            {active && <Menu />}
         </div>
     )
 

@@ -12,11 +12,17 @@
   flex-direction: row;
 }
 
-.HeaderLista a {
+.HeaderLista p {
+  transition: 0.5s;
   color: white;
   padding-right: 30px;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.HeaderLista p:hover {
+  color: rgb(184, 184, 184);
 }
 
 .Header .Logo p {
@@ -26,4 +32,16 @@
   text-decoration: none;
   padding-left: 10px;
   cursor: pointer;
+}
+
+.buttonHeader {
+  position: fixed;
+  font-weight: bold;
+  padding: 3px;
+  color: white;
+  background-color: black;
+  border-color: black;
+  right: 20px;
+  width: 50px;
+  font-size: 15px;
 }

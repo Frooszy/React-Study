@@ -4,9 +4,11 @@ import { useState } from 'react'
 
 function Header() {
 
-    const [active, setActive] = useState(false)
+    function MenuClick() {
+        setActive(false)
+    }
 
-    const orActive = active
+    const [active, setActive] = useState(false)
 
     return (
         <div className="Header">
@@ -18,7 +20,7 @@ function Header() {
                 <li><p href='#Catalog'>Catalog</p></li>
                 <li><p onClick={() => setActive(!active)}>Menu</p></li>
             </ul>
-            <Menu isActive={orActive} />
+            <Menu isActive={active} clickStatus={MenuClick} />
         </div>
     )
 

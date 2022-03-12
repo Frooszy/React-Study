@@ -1,0 +1,32 @@
+.BlockMenu {
+    max-width: 500px;
+    display: flex;
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    padding: 15px 10px 15px 10px; 
+    transition: 1s;
+    opacity: 0; 
+}
+
+.BlockMenu.BlockMenuOpen {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.HeaderBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.BlockMenu p {
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+}

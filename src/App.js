@@ -1,12 +1,17 @@
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
+import HeaderBlock from './components/HeaderBlock/HeaderBlock';
+import HeaderBlockProvider from './contexts/HeaderBlockContext';
 
 function App() {
 
   return (
 
     <div className="App">
-      <Header />
+      <HeaderBlockProvider>
+        <Header />
+        <HeaderBlock />
+      </HeaderBlockProvider>
       <Footer />
     </div>
 

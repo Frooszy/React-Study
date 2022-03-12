@@ -1,24 +1,19 @@
 .menu {
     transition: 1s;
-    background-color: black;
-    color: white;
     display: flex;
     position: fixed;
+    color: white;
+    background-color: black;
     right: -115px;
     top: 80px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 .menu.menuActive {
-    transition: 1s;
-    display: flex;
-    position: fixed;
-    color: white;
-    background-color: black;
+    border-radius: 15px;
     right: 10px;
     top: 80px;
-    border-radius: 15px;
-    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    z-index: 10;
 }
 
 .menu ul {
@@ -40,4 +35,8 @@
 .menu ul li p:hover {
     color: rgb(175, 175, 175);
     cursor: pointer;
+}
+
+.BlockHeader {
+    display: none;
 }

@@ -1,13 +1,15 @@
+import { useContext } from 'react'
+import { HeaderBlockContext } from '../../contexts/HeaderBlockContext'
 import './Menu.css'
 
-function Menu(props) {
+function Menu({ isActive, clickStatus }) {
 
-    const isActive = props.isActive
+    const { setBlockStatus, BlockStatus } = useContext(HeaderBlockContext)
 
     return (
         <div className={isActive ? 'menu menuActive' : 'menu'}>
             <ul>
-                <li><p>Example 1</p></li>
+                <li><p onClick={() => { setBlockStatus(!BlockStatus); clickStatus() }}>Example 1</p></li>
             </ul>
         </div>
     )

@@ -6,6 +6,8 @@ function Header() {
 
     const [active, setActive] = useState(false)
 
+    const orActive = active
+
     return (
         <div className="Header">
             <div className="Logo">
@@ -14,9 +16,9 @@ function Header() {
             <ul className='HeaderLista'>
                 <li><p href='#About'>About</p></li>
                 <li><p href='#Catalog'>Catalog</p></li>
-                <li><p onClick={() => setActive(!active)}>Links</p></li>
+                <li><p onClick={() => setActive(!active)}>Menu</p></li>
             </ul>
-            {active && <Menu />}
+            <Menu isActive={orActive} />
         </div>
     )
 

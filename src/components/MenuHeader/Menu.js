@@ -1,13 +1,13 @@
 import './Menu.css'
 
-function Menu() {
+function Menu(props) {
+
+    const isActive = props.isActive
 
     return (
-        <div className={'menu'}>
+        <div className={isActive ? 'menu menuActive' : 'menu'}>
             <ul>
                 <li><p>Example 1</p></li>
-                <li><p>Example 2</p></li>
-                <li><p>Example 3</p></li>
             </ul>
         </div>
     )

@@ -1,19 +1,20 @@
 .BlockMenu {
     max-width: 500px;
     display: flex;
-    background-color: black;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
     position: relative;
     padding: 10px;
     flex-direction: column;
-    border-radius: 15px;
     align-items: center;
     padding: 15px 10px 15px 10px; 
     transition: 1s;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
     opacity: 0; 
 }
 
 .BlockMenu.BlockMenuOpen {
+    border-radius: 15px;
     cursor: pointer;
     opacity: 1;
 }
@@ -29,4 +30,17 @@
     padding-top: 8px;
     text-align: center;
     text-decoration: none;
+}
+
+.BlockMenu.BlockMenuOpen h1{
+    transition: 1s;
+}
+
+.BlockMenu.BlockMenuOpen h1:hover {
+    letter-spacing: 4px;
+}
+
+.BlockMenu.BlockMenu.BlockMenuOpen:hover {
+    letter-spacing: 0.1px;
+    background-color: rgba(70, 70, 70, 0.472);
 }
